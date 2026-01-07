@@ -22,9 +22,9 @@ const Theworld = () => {
   ];
 
   return (
-    <section className="bg-black text-white py-16 px-6 md:py-24 md:px-12 lg:px-24 w-full font-sans">
+    <section className="bg-black text-white py-16 px-6 md:py-24 md:px-12 lg:px-24 w-full font-Aktiv Grotesk">
       <div className="container mx-auto">
-        {/* Top Header Section */}
+       
         <div className="text-center mb-12 md:mb-20 w-[100%] h-[100%]">
   <h2 className="text-[34px] md:text-[44px] xl:text-[54px] 2xl:text-[64px] font-medium max-w-4xl mx-auto leading-tight">
     <span className="block">
@@ -37,10 +37,10 @@ const Theworld = () => {
 </div>
 
 
-        {/* Middle Image Placeholder */}
+      
         <div className="flex justify-center mb-16 md:mb-28">
           <img 
-            src="Theworld.png" // Replace with the link you provide
+            src="Theworld.png" 
             alt="AI Platform Illustration"
             className="w-full max-w-[600px] h-auto object-contain opacity-80"
           />
@@ -50,7 +50,7 @@ const Theworld = () => {
        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 lg:gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col border-t border-[#EAEAEA] pt-6">
-              <span className="text-5xl md:text-6xl lg:text-7xl font-light text-[#0095B6] mb-4">
+              <span className="text-5xl md:text-6xl lg:text-[138px] font-light text-[#0095B6] mb-4">
                 {stat.value}
               </span>
               <p className="text-sm md:text-base lg:text-[20px] font-normal text-white leading-[30px] max-w-[220px]">
