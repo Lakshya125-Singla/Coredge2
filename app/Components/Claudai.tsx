@@ -2,6 +2,15 @@
 import React from 'react';
 
 const Claudai = () => {
+   const partners = [
+    
+    { name: 'Cisco', logo: '/cisco.png' },
+    { name: 'Dell', logo: '/dell.png' },
+    { name: 'Google', logo: '/google.png' },
+    { name: 'Qualcomm', logo: '/qualcomm.png' },
+    { name: 'Broadcom', logo: '/broadcom.png' },
+    { name: 'Maerifa', logo: '/maerif.png' },
+  ];
   return (
     <>
     <section 
@@ -45,7 +54,7 @@ const Claudai = () => {
       </div>
 
      
-   <div className="relative z-10 w-full h-full mt-24 2xl:mt-40 mb-20 px-6">
+   {/* <div className="relative z-10 w-full h-full mt-24 2xl:mt-40 mb-20 px-6">
   
   <div className="mx-auto max-w-[1589px] 
                   flex flex-wrap items-center justify-center 2xl:justify-between 
@@ -53,7 +62,7 @@ const Claudai = () => {
                   opacity-50 grayscale opacity-100 transition-all duration-500 mt-[-100px]">
     
     {/* Image Scaling:
-        */}
+        
     <div className="flex justify-center min-w-[140px] md:min-w-min">
       <img src="/cisco.png" alt="Cisco" className="h-8 md:h-10 2xl:h-[32px] w-auto object-contain" />
     </div>
@@ -78,12 +87,25 @@ const Claudai = () => {
       <img src="/maerif.png" alt="Maerif" className="h-8 md:h-10 2xl:h-[32px] w-auto object-contain" />
     </div>
          
-         {/* Gradient Overlay  bottom fade  */}
-      <div className="absolute bottom-0 left-0 w-full h-38 bg-gradient-to-t from-black to-transparent z-1 pointer-events-none" />
+         {/* Gradient Overlay  bottom fade  
+      <div className="relative bottom-1 left-0 w-full h-38 bg-gradient-to-t from-black to-transparent z-1 pointer-events-none" />
   </div>
-</div>   
+</div>    */}
 
-{/* --- 3. LOGO BAR SECTION --- */}
+
+
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 items-center justify-items-center">
+          {partners.map((partner, index) => (
+            <div key={index} className="w-full flex justify-center">
+              <img
+                src={partner.logo} 
+                alt={partner.name}
+                className="h-10 md:h-12 object-contain"
+              />
+            </div>
+          ))}
+        </div>
+
 
     </section>
 

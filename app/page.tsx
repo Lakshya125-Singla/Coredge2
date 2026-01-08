@@ -3,7 +3,9 @@ import Claudai from './Components/Claudai';
 import Theworld from './Components/Theworld'; 
 import Corepiller from './Components/Corepiller';
 import Ready from './Components/Ready';
-import s from './Components/s';
+import Leading from './Components/leading';
+import PlatformSuite from './Components/PlatformSuite';
+import Partners from './Components/Partners';
 export default function Home() {
   return (
    <>
@@ -11,8 +13,11 @@ export default function Home() {
     <Claudai />
     <Theworld/>
     <Corepiller/>
+    <PlatformSuite/>
+    <Partners/>
+     <Leading/>
     <Ready/>
-    <s/>
+   
    
    </>
   );
