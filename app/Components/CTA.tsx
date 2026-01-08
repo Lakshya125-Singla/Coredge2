@@ -3,72 +3,55 @@ import React from 'react';
 export default function CTA() {
     return (
         <div>
-            <header>
-                <div className="relative min-h-screen w-auto overflow-hidden bg-[#020202] flex flex-col justify-center items-center">
+            <section
+                className="min-w-full relative bg-[#0B0B0B] overflow-hidden items-center
+                  mx-auto 
+                   before:content-['']
+      before:absolute
+      before:inset-0
+      before:top-0
+      before:left-0
+      before:h-[115%]
+      before:w-[100%]
+      before:bg-gradient-to-b
+      before:from-[#0B0B0B]
+      before:via-[#0B0B0B]/100
+      before:to-transparent
+      before:z-9
+      
+      ">
+                <img src="/CTA-bg.png" alt="CTA Inage" className="h-[90vh] xl:h-[90vh] 2xl:h-[90vh] lg:h-[85vh] md:h-[80vh] sm:h-[100vh] w-full object-fill " />
 
-                    {/* CONTENT */}
+                <div className="absolute w-full flex flex-col t-0 z-10 items-center justify-center px-6 mx-auto ">
+                    <div className="absolute container mx-auto text-center ">
 
-                    {/* IMAGE BACKGROUND (WAVE IMAGE) */}
-                    <picture>
-                        <img
-                            src="/CTA-bg.png"
-                            alt="CTA Background"
-                            className="mx-auto
-            w-[100%]
-            sm:w-[400px]
-            md:w-[800px]
-            lg:w-[1000px]
-            xl:w-[100%]
-            max-w-[1500px]
-            object-cover"
-                        />
-                    </picture>
+                        {/* Main Heading */}
+                        <h1 className="text-[#ffffff] font-semibold leading-10 lg:leading-14 xl:leading-16 2xl:leading-20 lg:text-[44px] text-[34px] md:leading-12
+                       md:text-[40px] xl:text-[54px] 2xl:text-[64px] w-full mx-auto px-auto">
+                            {/* Sovereign Cloud & AI Infrastructure <br className="hidden sm:block" /> For The Modern Enterprise */}
+                            Ready to Transform Your Cloud <br className="hidden sm:block" /> Infrastructure?
+                        </h1>
 
-                    <div className="flex flex-col absolute z-10 w-auto text-center">
-                        <div className='w-auto '>
-                            <h1 className="w-[1000px] lg:w-[800px] xl:w-[1000px] text-auto lg:text-[44px] md:text-[44px] md:w-[700px] md:mx-auto xl:text-[64px] sm:text-[12px] sm:w-[300px] font-semibold leading-tight text-[#fff]">
-                                Ready to Transform Your Cloud Infrastructure?
+                        {/* Subheading */}
+                        <p className="text-[#ffffff] leading-[23px] md:leading-[28px] lg:leading-[30px] xl:leading-[30px] 2xl:leading-[35px] lg:text-[20px] text-[14px]
+                      md:text-[16px] 2xl:text-[20px] font-normal text-center mx-[16%] my-6">
+                            Join leading enterprises leveraging sovereign cloud for secure, scalable operations
+                        </p>
 
-                            </h1>
-
-                        </div>
-                        <div className='w-auto'>
-                            <p className="pt-[24px] text-auto sm:text-[12px] sm:w-[300px] md:text-[16px] md:w-[750px] lg:text-[20px] lg:w-[800px] xl:text-[20px] xl:w-[1200px] text-[#fff] mx-auto">
-                                Join leading enterprises leveraging sovereign cloud for secure, scalable operations
-
-                            </p>
-                        </div>
-                        <div className="pt-[46px] lg:mb-60 md:mb-52 sm:mb-80 pb-6 flex flex-col sm:flex-row justify-center gap-4">
-                            <button className="px-[28px] py-[13px] text-auto sm:text-[12px] md:text-[16px] lg:text-[20px] xl:text-[20px]  rounded-[8px] bg-[#0095B6D9] text-white font-medium hover:opacity-90 transition ">
+                        {/* Buttons Group */}
+                        <div className="flex flex-col sm:flex-row items-center gap-4 justify-center mb-[120%] pb-[100%] lg:mb-[70%] md:mb-[85%] md:pb-[20%] xl:mb-[50%] 2xl:mb-[38%] pt-6">
+                            <button className="px-[28px] py-[13px] bg-[#0095B6] text-white rounded-md  transition-all 2xl:text-base font-medium text-[14px] lg:text-[20px] 2xl:text-[20px] md:text-[16px] ">
                                 Request a Demo
-
                             </button>
-
-                            <button className="px-[28px] py-[13px] text-auto sm:text-[12px] md:text-[16px] lg:text-[20px] xl:text-[20px] rounded-[8px] border border-[#fff] text-[#fff] font-medium hover:bg-gray-100 transition w-full sm:w-auto">
+                            <button className="px-[28px] py-[13px] border border-[#fff] text-white rounded-md  transition-all 2xl:text-base font-medium text-[14px] lg:text-[20px] 2xl:text-[20px] md:text-[16px] ">
                                 Get in Touch
-
                             </button>
                         </div>
                     </div>
-                </div>
-            </header>
-            {/* <section className="py-24 text-center">
-      <h2 className="text-5xl font-bold">
-        Ready to Transform Your Cloud <br/>Infrastructure?
-      </h2>
-      <p className="text-lg text-black-800 mt-4">
-        Join enterprises leveraging sovereign cloud for secure, scalable operations.
-      </p>
 
-      <div className="mt-8 flex justify-center gap-4">
-        <button className="bg-blue-500 text-white text-sm px-6 py-0 rounded-xl">
-          Request a Demo
-        </button>
-        <button className="border text-sm bg-black text-white px-6 py-3 rounded-xl">
-          Contact Us
-        </button>
-      </div>
-    </section> */}
+                </div>
+
+            </section>
         </div>
     );
 }
