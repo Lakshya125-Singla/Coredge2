@@ -50,9 +50,17 @@ const Theworld = () => {
        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 lg:gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col border-t border-[#EAEAEA] pt-6">
-              <span className="text-[100px] md:text-[110px] lg:text-[118px] 2x1:text-[138px] font-light text-[#0095B6] mb-4">
-                {stat.value}
-              </span>
+             <span 
+  className="text-[100px] md:text-[110px] lg:text-[118px] 2xl:text-[138px] font-light mb-4"
+  style={{
+    background: 'linear-gradient(90deg, #BEDD00 0%, #0095B6 63.14%)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text'
+  }}
+>
+  {stat.value}
+</span>
               <p className="text-sm md:text-base lg:text-[20px] font-normal text-white leading-[30px] max-w-[220px]">
                 {stat.label}
               </p>
